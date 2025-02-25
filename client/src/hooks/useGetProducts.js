@@ -8,7 +8,7 @@ const useGetProducts = () => {
    
     const getProducts=async()=>{
         try {
-            const res=await fetch("http://localhost:5000/api/bills/get/product",{
+            const res=await fetch("/api/bills/get/product",{
                 method:"GET",
                 headers:{
                     "Content-Type":"application/json"

@@ -17,7 +17,7 @@ const CustomerBillsPage = () => {
     if (window.confirm("Are you sure to delete the bill ?")) {
     setLoading(true);
       try {
-        const res = await fetch(`http://localhost:5000/api/bills/${id}`, {
+        const res = await fetch(`/api/bills/${id}`, {
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",

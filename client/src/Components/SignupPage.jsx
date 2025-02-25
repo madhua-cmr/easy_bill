@@ -68,7 +68,7 @@ const SignupPage = () => {
     setLoading(true);
 try {
   console.log(signvalues)
-  const res=await fetch("http://localhost:5000/api/user/signup",{
+  const res=await fetch("/api/user/signup",{
     method:"POST",
     headers:{
       "Content-Type":"application/json",

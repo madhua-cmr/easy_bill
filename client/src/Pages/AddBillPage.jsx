@@ -53,7 +53,7 @@ return;
   }
       try {
 
-        const res=await fetch("http://localhost:5000/api/bills/",{
+        const res=await fetch("/api/bills/",{
           method:"POST",
           headers:{
             "Content-Type":"application/json",

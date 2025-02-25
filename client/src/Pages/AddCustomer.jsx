@@ -20,7 +20,7 @@ const AddCustomer = () => {
     }
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/customer/", {
+      const res = await fetch("/api/customer/", {
         method:"POST",
         headers: {
           "Content-Type": "application/json",

@@ -13,7 +13,7 @@ const CustomersPage = () => {
   const navigate = useNavigate();
   const handledelete=async(id)=>{setLoading(true);
     try {
-      const res=await fetch(`http://localhost:5000/api/customer/${id}`,{
+      const res=await fetch(`/api/customer/${id}`,{
         method:"DELETE",
         headers:{
           "Content-Type":"application/json",

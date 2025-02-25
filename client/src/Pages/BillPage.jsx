@@ -17,7 +17,7 @@ const BillPage = () => {
   const getparticularbill = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:5000/api/bills/bill/${id}`, {
+      const res = await fetch(`/api/bills/bill/${id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

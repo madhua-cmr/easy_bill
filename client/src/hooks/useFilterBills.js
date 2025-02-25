@@ -16,7 +16,7 @@ const useFilterBills = () => {
             const customerbills=async()=>{
   setLoading(true);
               try {
-                const res=await fetch(`http://localhost:5000/api/customer/${custid}`,{
+                const res=await fetch(`/api/customer/${custid}`,{
                   method:"POST",
                   headers:{
                     "Content-Type":"application/json",
