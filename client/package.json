@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start":"nodemon server.js",
+    "start": "nodemon server.js",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -14,7 +14,8 @@
     "@react-pdf/renderer": "^4.2.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-hot-toast": "^2.5.2"
+    "react-hot-toast": "^2.5.2",
+    "server": "file:.."
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
