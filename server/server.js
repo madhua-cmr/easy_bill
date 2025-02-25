@@ -7,7 +7,7 @@ import userRoutes from "./routers/userRoutes.js";
 import customerRoutes from "./routers/customerRoutes.js";
 import "dotenv/config";
 import cookieParser from "cookie-parser";
-
+import path from "path"
 const app = express();
 
 app.use(cors({
