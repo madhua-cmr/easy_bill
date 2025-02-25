@@ -14,6 +14,13 @@ app.use(cors({
   origin:"https://easy-bill.onrender.com",
   credentials:true
 }));
+app.use(express.static(path.join(__dirname, 'dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
+
 app.use(bodyParser.json());
 app.use(cookieParser())
 app.use("/api/bills", billRoutes);
