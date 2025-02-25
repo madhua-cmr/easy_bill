@@ -11,7 +11,7 @@ import cookieParser from "cookie-parser";
 const app = express();
 
 app.use(cors({
-  origin:"http://localhost:5173",
+  origin:"https://easy-bill.onrender.com",
   credentials:true
 }));
 app.use(bodyParser.json());

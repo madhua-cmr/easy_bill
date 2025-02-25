@@ -8,7 +8,7 @@ export default defineConfig({
     port:3000,
     proxy:{
       "/api":{
-        target:"",
+        target:"https://easy-bill.onrender.com",
         changeOrigin:true,
         secure:false,
         ws:true,
