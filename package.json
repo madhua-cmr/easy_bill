@@ -6,9 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "set NODE_ENV=production &&node server/server.js",
-    "dev":"set NODE_ENV=development && nodemon server/server.js",
-        "build":"npm install && npm install --prefix client && npm run build --prefix client"
-   
+    "dev": "set NODE_ENV=development && nodemon server/server.js",
+    "build": "npm install && npm install --prefix client && npm run build --prefix client"
   },
   "author": "Madhumitha",
   "license": "ISC",
@@ -22,6 +21,7 @@
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.10.1",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "react-router-dom": "^7.2.0"
   }
 }
